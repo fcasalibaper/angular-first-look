@@ -1,0 +1,10 @@
+<section class="section">
+  <h1>- {{customTitle}}</h1>
+  <div class="container container--column">
+    <div class="col col-xs-12">
+      <ul>
+        <app-item *ngFor="let elements of listEls" [els]="elements"></app-item>
+      </ul>
+    </div>
+  </div>
+</section>

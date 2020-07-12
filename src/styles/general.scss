@@ -1,0 +1,43 @@
+section.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding-left: $PADDING_MOBILE;
+  padding-right: $PADDING_MOBILE;
+  // flex-direction: column;
+
+  @include upTo(xs) {
+    max-width: $sm;
+    padding-left: $PADDING_SM;
+    padding-right: $PADDING_SM;
+    flex-direction: row;
+  }
+  @include upTo(sm) {
+    max-width: $md;
+  }
+  @include upTo(md) {
+    max-width: $lg;
+  }
+  @include upTo(lg) {
+    max-width: $xl;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+  &--column {
+    flex-direction: column;
+  }
+}
